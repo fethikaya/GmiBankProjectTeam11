@@ -24,6 +24,12 @@ public class GmiPage {
     @FindBy(xpath = "(//a[@class='dropdown-item'])[2]")
     public WebElement registerButton;
 
+    @FindBy(id = "username")
+    public WebElement userNameBox;
+
+    @FindBy(id = "password")
+    public WebElement passwordBox;
+
 
 
 
