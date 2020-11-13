@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class GmiPage {
+public class AdminCreatePage {
 
-    public GmiPage(){
+    public AdminCreatePage(){
 
         PageFactory.initElements(Driver.getDriver(),this);
     }
