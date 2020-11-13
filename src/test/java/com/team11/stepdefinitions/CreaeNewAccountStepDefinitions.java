@@ -6,7 +6,7 @@ import io.cucumber.java.en.Given;
 
 import java.util.List;
 
-public class DBStepDefinitions {
+public class CreaeNewAccountStepDefinitions {
 
     @Given("kullanici veritabanina baglanir")
     public void kullanici_veritabanina_baglanir() {
