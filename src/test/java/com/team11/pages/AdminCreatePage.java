@@ -14,6 +14,24 @@ public class AdminCreatePage {
     @FindBy(css = "li.nav-item")
     public WebElement pageHead;
 
+    @FindBy(xpath = "//li[@id='account-menu']")
+    public  WebElement accountMenu;
+
+
+    @FindBy(id = "login-item")
+    public WebElement signInButton;
+
+    @FindBy(xpath = "(//a[@class='dropdown-item'])[2]")
+    public WebElement registerButton;
+
+    @FindBy(id = "username")
+    public WebElement userNameBox;
+
+    @FindBy(id = "password")
+    public WebElement passwordBox;
+
+
+
 
 
 }
