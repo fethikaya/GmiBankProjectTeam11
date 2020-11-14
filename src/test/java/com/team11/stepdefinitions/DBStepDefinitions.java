@@ -2,6 +2,7 @@ package com.team11.stepdefinitions;
 
 import com.team11.utilities.DatabaseUtility;
 import com.team11.utilities.Driver;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 
 import java.util.List;
@@ -22,5 +23,4 @@ public class DBStepDefinitions {
         Driver.getDriver().get("http://google.com");
 
     }
-
 }

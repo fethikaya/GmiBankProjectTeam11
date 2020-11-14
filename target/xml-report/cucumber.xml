@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="1" tests="1" time="0.391">
+<testcase classname="User Create A New Account" name="TC_01_User should create a description for the new account and it cannot be blank" time="0.14">
+<skipped><![CDATA[Given User goes login with Employee.........................................undefined
+And User click  My Operations button........................................undefined
+And User select Manage Accounts button......................................undefined
+And User click Create a new Account button..................................undefined
+And User  dont send anything to Description box.............................undefined
+And User click save button..................................................undefined
+]]></skipped>
+</testcase>
+</testsuite>
