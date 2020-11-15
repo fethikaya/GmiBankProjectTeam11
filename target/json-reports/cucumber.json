@@ -3,13 +3,11 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-11-14T23:07:15.941Z",
         "line": 3,
-        "name": "TC_01_User should create a description for the new account and it cannot be blank",
+        "name": "User Goes Create New Account Page",
         "description": "",
-        "id": "user-create-a-new-account;tc-01-user-should-create-a-description-for-the-new-account-and-it-cannot-be-blank",
-        "type": "scenario",
-        "keyword": "Scenario",
+        "type": "background",
+        "keyword": "Background",
         "steps": [
           {
             "result": {
@@ -46,13 +44,24 @@
             "name": "User click Create a new Account button",
             "match": {},
             "keyword": "And "
-          },
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-14T23:46:00.415Z",
+        "line": 19,
+        "name": "TC_03_User should provide a balance for the first time account creation as Dollar",
+        "description": "",
+        "id": "user-create-a-new-account;tc-03-user-should-provide-a-balance-for-the-first-time-account-creation-as-dollar",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
           {
             "result": {
               "status": "undefined"
             },
-            "line": 8,
-            "name": "User  dont send anything to Description box",
+            "line": 20,
+            "name": "User  dont send anything to Balance box",
             "match": {},
             "keyword": "And "
           },
@@ -60,7 +69,7 @@
             "result": {
               "status": "undefined"
             },
-            "line": 9,
+            "line": 21,
             "name": "User click save button",
             "match": {},
             "keyword": "And "
@@ -69,6 +78,9 @@
         "tags": [
           {
             "name": "@createNewAccount"
+          },
+          {
+            "name": "@InBalance"
           }
         ]
       }

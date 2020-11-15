@@ -9,15 +9,10 @@ formatter.feature({
     }
   ]
 });
-formatter.scenario({
-  "name": "TC_01_User should create a description for the new account and it cannot be blank",
+formatter.background({
+  "name": "User Goes Create New Account Page",
   "description": "",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@createNewAccount"
-    }
-  ]
+  "keyword": "Background"
 });
 formatter.step({
   "name": "User goes login with Employee",
@@ -51,8 +46,21 @@ formatter.match({});
 formatter.result({
   "status": "undefined"
 });
+formatter.scenario({
+  "name": "TC_03_User should provide a balance for the first time account creation as Dollar",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@createNewAccount"
+    },
+    {
+      "name": "@InBalance"
+    }
+  ]
+});
 formatter.step({
-  "name": "User  dont send anything to Description box",
+  "name": "User  dont send anything to Balance box",
   "keyword": "And "
 });
 formatter.match({});

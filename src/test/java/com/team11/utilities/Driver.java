@@ -421,16 +421,7 @@ public class Driver {
         }
         return driver.getTitle();
     }
-//
-//    public static String getAlertText() {
-//        Alert alert = driver.switchTo().alert();
-//        String text = alert.getText();
-//        System.out.println(text);
-//        alert.accept();
-//        return text;
-//    }
 
-   // US_004Page login=new US_004Page();
    public static  void iAmOnHomePage() {
        US_004Page login=new US_004Page();
        Driver.getDriver().get(ConfigurationReader.getProperty("url"));
