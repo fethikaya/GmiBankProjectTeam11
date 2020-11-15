@@ -1,37 +1,32 @@
 package com.team11.stepdefinitions;
 
-import com.team11.pages.US_004Page;
+import com.team11.pages.GmiSignInPage;
 import com.team11.utilities.ConfigurationReader;
 import com.team11.utilities.Driver;
-import io.cucumber.java.en.*;
+import io.cucumber.java.en.And;
+import io.cucumber.java.en.Given;
 
 
 
 
+public class LoginValidStepDefinitions {
 
-public class US_004StepDefinitions {
 
-
-    US_004Page US_004Page = new US_004Page();
+    GmiSignInPage gmiSignInPage = new GmiSignInPage();
 
 
     @Given("I am on home page")
     public void iAmOnHomePage() {
         Driver.getDriver().get(ConfigurationReader.getProperty("url"));
-        Driver.waitAndClick(US_004Page.accountMenu,3);
-        Driver.waitAndClick(US_004Page.SignIn,3);
+        Driver.waitAndClick(gmiSignInPage.accountMenu, 3);
+        Driver.waitAndClick(gmiSignInPage.SignIn, 3);
 
     }
-
 
 
     @And("user logs in as {string}")
     public void userLogsInAs(String role) {
-        US_004Page.login(role);
+        gmiSignInPage.login(role);
 
     }
-
-
-
 }
-

@@ -7,7 +7,7 @@ import io.restassured.response.Response;
 
 import static io.restassured.RestAssured.given;
 
-public class ApiStepDefinitions {
+public class ChoosingDateStepDefinitions {
 
     @Given("kullanici kendisine verilen token ile apiye baglanir")
     public void kullanici_kendisine_verilen_token_ile_apiye_baglanir() {

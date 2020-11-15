@@ -14,6 +14,6 @@ import org.junit.runner.RunWith;
         tags = "@Cuslogin",
         dryRun = false
 )
-public class US_004Runner {
+public class GmiSignInPageRunner {
 
 }

@@ -14,5 +14,5 @@ import org.junit.runner.RunWith;
         dryRun = true
 )
 
-public class US_0013Runner {
+public class CreateANewAccountRunner {
 }
