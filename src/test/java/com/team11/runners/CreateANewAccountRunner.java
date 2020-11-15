@@ -1,5 +1,4 @@
 package com.team11.runners;
-
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
@@ -11,10 +10,9 @@ import org.junit.runner.RunWith;
                 "junit:target/xml-report/cucumber.xml"},
         features = "src/test/resources/features",
         glue = "gmibank/stepdefinitions",
-        tags = "@db",
-        dryRun = false
+        tags = "@InBalance",
+        dryRun = true
 )
-public class Runner {
 
+public class CreateANewAccountRunner {
 }
-
