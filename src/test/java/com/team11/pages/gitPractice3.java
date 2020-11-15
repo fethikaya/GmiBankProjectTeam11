@@ -1,4 +1,4 @@
 package com.team11.pages;
 
-public class UserInfoPage {
+public class gitPractice3 {
 }
