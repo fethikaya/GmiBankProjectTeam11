@@ -1,62 +1,31 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/passwordLevel.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/US_012EmployeeCanManageCustomer.feature");
 formatter.feature({
-  "name": "",
-  "description": "  US_Story08\n  Password segment on Homepage should be editable",
+  "name": "An Employee can manage Customer",
+  "description": "",
   "keyword": "Feature",
   "tags": [
     {
-      "name": "@passwordLevel"
-    }
-  ]
-});
-formatter.scenarioOutline({
-  "name": "The old password should not be used",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@TC_001"
-    }
-  ]
-});
-formatter.step({
-  "name": "Enter the \"\u003cCurrent Password\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "name": "Enter a \"\u003cNew Password\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "name": "Verify \"fifth level bar\" is displayed",
-  "keyword": "And "
-});
-formatter.examples({
-  "name": "",
-  "description": "",
-  "keyword": "Examples",
-  "rows": [
-    {
-      "cells": [
-        "Current Password",
-        "New Password"
-      ]
-    },
-    {
-      "cells": [
-        "Beck11",
-        "NewPs1*"
-      ]
+      "name": "@tableHeaderCustomers"
     }
   ]
 });
 formatter.background({
-  "name": "",
+  "name": "User goes to employee page clicks to my operations and clicks to manage Customers",
   "description": "",
   "keyword": "Background"
 });
+formatter.scenario({
+  "name": "TC01 All customers should show up on manage customers module populating the account information of the customer \"First Name  Last Name  Middle Initial  Email  Mobile Phone Number  Phone Number  Address  Create Date \"",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@tableHeaderCustomers"
+    }
+  ]
+});
 formatter.step({
-  "name": "Go to given URL",
+  "name": "user is on manage customer page",
   "keyword": "Given "
 });
 formatter.match({});
@@ -64,15 +33,7 @@ formatter.result({
   "status": "undefined"
 });
 formatter.step({
-  "name": "User login",
-  "keyword": "When "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.step({
-  "name": "Click Account Menu",
+  "name": "get the web table header",
   "keyword": "And "
 });
 formatter.match({});
@@ -80,53 +41,8 @@ formatter.result({
   "status": "undefined"
 });
 formatter.step({
-  "name": "Select Password button",
-  "keyword": "And "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.step({
-  "name": "See Password Edit Form",
-  "keyword": "And "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.scenario({
-  "name": "The old password should not be used",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@passwordLevel"
-    },
-    {
-      "name": "@TC_001"
-    }
-  ]
-});
-formatter.step({
-  "name": "Enter the \"Beck11\"",
-  "keyword": "And "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.step({
-  "name": "Enter a \"NewPs1*\"",
-  "keyword": "And "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.step({
-  "name": "Verify \"fifth level bar\" is displayed",
-  "keyword": "And "
+  "name": "verify the table header contains \"First Name\"  \"Last Name\"  \"Middle Initial\"  \"Email\"  \"Mobile Phone Number\"  \"Phone Number\"  \"Address\"  \"Create Date\"",
+  "keyword": "Then "
 });
 formatter.match({});
 formatter.result({
