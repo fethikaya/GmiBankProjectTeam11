@@ -3,8 +3,8 @@
     "line": 2,
     "elements": [
       {
-        "line": 3,
-        "name": "User Goes Create New Account Page",
+        "line": 6,
+        "name": "",
         "description": "",
         "type": "background",
         "keyword": "Background",
@@ -13,8 +13,8 @@
             "result": {
               "status": "undefined"
             },
-            "line": 4,
-            "name": "User goes login with Employee",
+            "line": 7,
+            "name": "Go to given URL",
             "match": {},
             "keyword": "Given "
           },
@@ -22,8 +22,17 @@
             "result": {
               "status": "undefined"
             },
-            "line": 5,
-            "name": "User click  My Operations button",
+            "line": 8,
+            "name": "User login",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 9,
+            "name": "Click Account Menu",
             "match": {},
             "keyword": "And "
           },
@@ -31,8 +40,8 @@
             "result": {
               "status": "undefined"
             },
-            "line": 6,
-            "name": "User select Manage Accounts button",
+            "line": 10,
+            "name": "Select Password button",
             "match": {},
             "keyword": "And "
           },
@@ -40,28 +49,28 @@
             "result": {
               "status": "undefined"
             },
-            "line": 7,
-            "name": "User click Create a new Account button",
+            "line": 11,
+            "name": "See Password Edit Form",
             "match": {},
             "keyword": "And "
           }
         ]
       },
       {
-        "start_timestamp": "2020-11-14T23:46:00.415Z",
-        "line": 19,
-        "name": "TC_03_User should provide a balance for the first time account creation as Dollar",
+        "start_timestamp": "2020-11-16T04:52:48.865Z",
+        "line": 22,
+        "name": "The old password should not be used",
         "description": "",
-        "id": "user-create-a-new-account;tc-03-user-should-provide-a-balance-for-the-first-time-account-creation-as-dollar",
+        "id": ";the-old-password-should-not-be-used;;2",
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
               "status": "undefined"
             },
-            "line": 20,
-            "name": "User  dont send anything to Balance box",
+            "line": 16,
+            "name": "Enter the \"Beck11\"",
             "match": {},
             "keyword": "And "
           },
@@ -69,30 +78,39 @@
             "result": {
               "status": "undefined"
             },
-            "line": 21,
-            "name": "User click save button",
+            "line": 17,
+            "name": "Enter a \"NewPs1*\"",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 18,
+            "name": "Verify \"fifth level bar\" is displayed",
             "match": {},
             "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@createNewAccount"
+            "name": "@passwordLevel"
           },
           {
-            "name": "@InBalance"
+            "name": "@TC_001"
           }
         ]
       }
     ],
-    "name": "User Create A New Account",
-    "description": "",
-    "id": "user-create-a-new-account",
+    "name": "",
+    "description": "  US_Story08\n  Password segment on Homepage should be editable",
+    "id": "",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/US_0013.feature",
+    "uri": "file:src/test/resources/features/passwordLevel.feature",
     "tags": [
       {
-        "name": "@createNewAccount",
+        "name": "@passwordLevel",
         "type": "Tag",
         "location": {
           "line": 1,
