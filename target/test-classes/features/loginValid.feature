@@ -16,24 +16,3 @@ Feature: Login GmibankPage
       | User     |
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

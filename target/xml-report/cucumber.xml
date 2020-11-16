@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="1" tests="1" time="0.408">
-<testcase classname="User Create A New Account" name="TC_03_User should provide a balance for the first time account creation as Dollar" time="0.103">
-<skipped><![CDATA[Given User goes login with Employee.........................................undefined
-And User click  My Operations button........................................undefined
-And User select Manage Accounts button......................................undefined
-And User click Create a new Account button..................................undefined
-And User  dont send anything to Balance box.................................undefined
-And User click save button..................................................undefined
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="1" tests="1" time="0.171">
+    <testcase classname="An Employee can manage Customer" name="TC01 All customers should show up on manage customers module populating the account information of the customer &quot;First Name  Last Name  Middle Initial  Email  Mobile Phone Number  Phone Number  Address  Create Date &quot;" time="0.048">
+        <skipped><![CDATA[Given user is on manage customer page.......................................undefined
+And get the web table header................................................undefined
+Then verify the table header contains "First Name"  "Last Name"  "Middle Initial"  "Email"  "Mobile Phone Number"  "Phone Number"  "Address"  "Create Date".undefined
 ]]></skipped>
-</testcase>
+    </testcase>
 </testsuite>
