@@ -27,7 +27,8 @@ public class Driver {
 
     private Driver() {
     }
- //   static WebElement webelement;
+
+    //   static WebElement webelement;
     static WebDriver driver;
 
     public static WebDriver getDriver() {
@@ -422,76 +423,77 @@ public class Driver {
         return driver.getTitle();
     }
 
-   public static  void iAmOnHomePage() {
-       GmiSignInPage gmiSignInPage = new GmiSignInPage();
-       Driver.getDriver().get(ConfigurationReader.getProperty("url"));
-       Driver.waitAndClick(gmiSignInPage.accountMenu,3);
-       Driver.waitAndClick(gmiSignInPage.SignIn,3);
-
-   }
-    public static void login (String role) {
+    public static void iAmOnHomePage() {
         GmiSignInPage gmiSignInPage = new GmiSignInPage();
-    if (role.equals("Employee")) {
-        iAmOnHomePage();
-        gmiSignInPage.username.sendKeys(ConfigurationReader.getProperty("EmployeeUsername"));
-        gmiSignInPage.password.sendKeys(ConfigurationReader.getProperty("EmployeePassword"));
-        Driver.waitForVisibility(gmiSignInPage.cancelButton,5);
-        Assert.assertTrue("Cancel button is  not avilable before submit button,test failed!",gmiSignInPage.cancelButton.isDisplayed());
-        System.out.println("Cancel button is Displayed");
-        gmiSignInPage.submit.click();
-        Driver.wait(2);
-        //Driver.closeDriver();
-    } else if (role.equals("Admin")) {
-        iAmOnHomePage();
-        gmiSignInPage.username.sendKeys(ConfigurationReader.getProperty("AdminUsername"));
-        gmiSignInPage.password.sendKeys(ConfigurationReader.getProperty("AdminPassword"));
-        Driver.waitForVisibility(gmiSignInPage.cancelButton,5);
-        Assert.assertTrue("Cancel button is  not avilable before submit button,test failed!",gmiSignInPage.cancelButton.isDisplayed());
-        System.out.println("Cancel button is Displayed");
-        gmiSignInPage.submit.click();
-        Driver.wait(2);
-        //Driver.closeDriver();
-    } else if (role.equals("Customer")) {
-        iAmOnHomePage();
-        gmiSignInPage.username.sendKeys(ConfigurationReader.getProperty("CustomerUsername"));
-        gmiSignInPage.password.sendKeys(ConfigurationReader.getProperty("CustomerPassword"));
-        Driver.waitForVisibility(gmiSignInPage.cancelButton,5);
-        Assert.assertTrue("Cancel button is  not avilable before submit button,test failed!",gmiSignInPage.cancelButton.isDisplayed());
-        System.out.println("Cancel button is Displayed");
-        gmiSignInPage.submit.click();
-        Driver.wait(2);
-       // Driver.closeDriver();
-    }else if (role.equals("User")) {
-        iAmOnHomePage();
-        gmiSignInPage.username.sendKeys(ConfigurationReader.getProperty("UserUsername"));
-        gmiSignInPage.password.sendKeys(ConfigurationReader.getProperty("UserPassword"));
-        Driver.waitForVisibility(gmiSignInPage.cancelButton,5);
-        Assert.assertTrue("Cancel button is  not avilable before submit button,test failed!",gmiSignInPage.cancelButton.isDisplayed());
-        System.out.println("Cancel button is Displayed");
-        gmiSignInPage.submit.click();
-        Driver.wait(2);
-       // Driver.closeDriver();
+        Driver.getDriver().get(ConfigurationReader.getProperty("url"));
+        Driver.waitAndClick(gmiSignInPage.accountMenu, 3);
+        Driver.waitAndClick(gmiSignInPage.SignIn, 3);
 
-    }else if (role.equals("Manager")) {
-        iAmOnHomePage();
-        gmiSignInPage.username.sendKeys(ConfigurationReader.getProperty("ManagerUsername"));
-        gmiSignInPage.password.sendKeys(ConfigurationReader.getProperty("ManagerPassword"));
-        Driver.waitForVisibility(gmiSignInPage.cancelButton,5);
-        Assert.assertTrue("Cancel button is  not avilable before submit button,test failed!",gmiSignInPage.cancelButton.isDisplayed());
-        System.out.println("Cancel button is Displayed");
-        gmiSignInPage.submit.click();
-        Driver.wait(2);
-       // Driver.closeDriver();
     }
 
+    public static void login(String role) {
+        GmiSignInPage gmiSignInPage = new GmiSignInPage();
+        if (role.equals("Employee")) {
+            iAmOnHomePage();
+            gmiSignInPage.username.sendKeys(ConfigurationReader.getProperty("EmployeeUsername"));
+            gmiSignInPage.password.sendKeys(ConfigurationReader.getProperty("EmployeePassword"));
+            Driver.waitForVisibility(gmiSignInPage.cancelButton, 5);
+            Assert.assertTrue("Cancel button is  not avilable before submit button,test failed!", gmiSignInPage.cancelButton.isDisplayed());
+            System.out.println("Cancel button is Displayed");
+            gmiSignInPage.submit.click();
+            Driver.wait(2);
+            //Driver.closeDriver();
+        } else if (role.equals("Admin")) {
+            iAmOnHomePage();
+            gmiSignInPage.username.sendKeys(ConfigurationReader.getProperty("AdminUsername"));
+            gmiSignInPage.password.sendKeys(ConfigurationReader.getProperty("AdminPassword"));
+            Driver.waitForVisibility(gmiSignInPage.cancelButton, 5);
+            Assert.assertTrue("Cancel button is  not avilable before submit button,test failed!", gmiSignInPage.cancelButton.isDisplayed());
+            System.out.println("Cancel button is Displayed");
+            gmiSignInPage.submit.click();
+            Driver.wait(2);
+            //Driver.closeDriver();
+        } else if (role.equals("Customer")) {
+            iAmOnHomePage();
+            gmiSignInPage.username.sendKeys(ConfigurationReader.getProperty("CustomerUsername"));
+            gmiSignInPage.password.sendKeys(ConfigurationReader.getProperty("CustomerPassword"));
+            Driver.waitForVisibility(gmiSignInPage.cancelButton, 5);
+            Assert.assertTrue("Cancel button is  not avilable before submit button,test failed!", gmiSignInPage.cancelButton.isDisplayed());
+            System.out.println("Cancel button is Displayed");
+            gmiSignInPage.submit.click();
+            Driver.wait(2);
+            // Driver.closeDriver();
+        } else if (role.equals("User")) {
+            iAmOnHomePage();
+            gmiSignInPage.username.sendKeys(ConfigurationReader.getProperty("UserUsername"));
+            gmiSignInPage.password.sendKeys(ConfigurationReader.getProperty("UserPassword"));
+            Driver.waitForVisibility(gmiSignInPage.cancelButton, 5);
+            Assert.assertTrue("Cancel button is  not avilable before submit button,test failed!", gmiSignInPage.cancelButton.isDisplayed());
+            System.out.println("Cancel button is Displayed");
+            gmiSignInPage.submit.click();
+            Driver.wait(2);
+            // Driver.closeDriver();
+
+        } else if (role.equals("Manager")) {
+            iAmOnHomePage();
+            gmiSignInPage.username.sendKeys(ConfigurationReader.getProperty("ManagerUsername"));
+            gmiSignInPage.password.sendKeys(ConfigurationReader.getProperty("ManagerPassword"));
+            Driver.waitForVisibility(gmiSignInPage.cancelButton, 5);
+            Assert.assertTrue("Cancel button is  not avilable before submit button,test failed!", gmiSignInPage.cancelButton.isDisplayed());
+            System.out.println("Cancel button is Displayed");
+            gmiSignInPage.submit.click();
+            Driver.wait(2);
+            // Driver.closeDriver();
         }
+    }
         @After
-        public void tearDown(){
+        public void tearDown () {
             closeDriver();
 
 
         }
-}
+    }
+
 
 
 

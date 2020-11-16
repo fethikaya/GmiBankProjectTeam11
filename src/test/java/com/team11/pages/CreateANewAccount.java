@@ -37,4 +37,25 @@ public class CreateANewAccount {
     public WebElement accountStatusType;
 
 
+    @FindBy(xpath="//input[@id='tp-account-createDate']")
+    public WebElement createDate;
+    @FindBy(xpath="//input[@id='tp-account-closedDate']")
+    public WebElement closedDate;
+    @FindBy(xpath="//select[@id='tp-account-employee']")
+    public WebElement employee;
+
+
+    public void enterDate(String closing, String opening) {
+
+        CreateANewAccount createANewAccount = new CreateANewAccount();
+        int firstDate = Integer.parseInt(opening.substring(0, 4));
+        int secondDate = Integer.parseInt(closing.substring(0, 4));
+
+        if (firstDate > secondDate) {
+            Driver.waitAndSendText(createANewAccount.closedDate, closing, 2);
+        }else {
+            System.out.println("Closing date can not be earlier than creating date!!!");
+        }
+
+    }
 }
