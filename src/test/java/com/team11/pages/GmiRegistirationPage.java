@@ -15,4 +15,15 @@ public class GmiRegistirationPage {
 
     @FindBy(xpath = "//*[@class='invalid-feedback']")
     public WebElement ssnMessage;
+
+    @FindBy(xpath="//input[@name='firstname']")
+    public WebElement firstname;
+
+    @FindBy(xpath = "//div[contains(text(),'Your First Name is required')]")
+    public  WebElement firstnameInvalidMsj;
+
+    @FindBy(xpath = "//input[@name='lastname']")
+    public  WebElement lastname;
+
+
 }
