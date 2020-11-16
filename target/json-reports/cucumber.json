@@ -11,7 +11,7 @@
         "steps": []
       },
       {
-        "start_timestamp": "2020-11-16T04:55:16.269Z",
+        "start_timestamp": "2020-11-16T16:32:09.350Z",
         "line": 4,
         "name": "TC01 All customers should show up on manage customers module populating the account information of the customer \"First Name  Last Name  Middle Initial  Email  Mobile Phone Number  Phone Number  Address  Create Date \"",
         "description": "",
@@ -21,29 +21,72 @@
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 48697186700,
+              "status": "passed"
             },
             "line": 5,
             "name": "user is on manage customer page",
-            "match": {},
+            "match": {
+              "location": "com.team11.stepdefinitions.CustomersWebTableStepDefinitions.user_is_on_manage_customer_page()"
+            },
             "keyword": "Given "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 60819500,
+              "status": "passed"
             },
             "line": 6,
             "name": "get the web table header",
-            "match": {},
+            "match": {
+              "location": "com.team11.stepdefinitions.CustomersWebTableStepDefinitions.get_the_web_table_header()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 34575600,
+              "status": "passed"
             },
             "line": 7,
             "name": "verify the table header contains \"First Name\"  \"Last Name\"  \"Middle Initial\"  \"Email\"  \"Mobile Phone Number\"  \"Phone Number\"  \"Address\"  \"Create Date\"",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"First Name\"",
+                  "offset": 33
+                },
+                {
+                  "val": "\"Last Name\"",
+                  "offset": 47
+                },
+                {
+                  "val": "\"Middle Initial\"",
+                  "offset": 60
+                },
+                {
+                  "val": "\"Email\"",
+                  "offset": 78
+                },
+                {
+                  "val": "\"Mobile Phone Number\"",
+                  "offset": 87
+                },
+                {
+                  "val": "\"Phone Number\"",
+                  "offset": 110
+                },
+                {
+                  "val": "\"Address\"",
+                  "offset": 126
+                },
+                {
+                  "val": "\"Create Date\"",
+                  "offset": 137
+                }
+              ],
+              "location": "com.team11.stepdefinitions.CustomersWebTableStepDefinitions.verify_the_table_header_contains(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
             "keyword": "Then "
           }
         ],

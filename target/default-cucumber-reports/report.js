@@ -28,24 +28,30 @@ formatter.step({
   "name": "user is on manage customer page",
   "keyword": "Given "
 });
-formatter.match({});
+formatter.match({
+  "location": "com.team11.stepdefinitions.CustomersWebTableStepDefinitions.user_is_on_manage_customer_page()"
+});
 formatter.result({
-  "status": "undefined"
+  "status": "passed"
 });
 formatter.step({
   "name": "get the web table header",
   "keyword": "And "
 });
-formatter.match({});
+formatter.match({
+  "location": "com.team11.stepdefinitions.CustomersWebTableStepDefinitions.get_the_web_table_header()"
+});
 formatter.result({
-  "status": "undefined"
+  "status": "passed"
 });
 formatter.step({
   "name": "verify the table header contains \"First Name\"  \"Last Name\"  \"Middle Initial\"  \"Email\"  \"Mobile Phone Number\"  \"Phone Number\"  \"Address\"  \"Create Date\"",
   "keyword": "Then "
 });
-formatter.match({});
+formatter.match({
+  "location": "com.team11.stepdefinitions.CustomersWebTableStepDefinitions.verify_the_table_header_contains(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+});
 formatter.result({
-  "status": "undefined"
+  "status": "passed"
 });
 });

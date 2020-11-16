@@ -13,8 +13,8 @@ EmployeManageCustomerPage employeManageCustomerPage=new EmployeManageCustomerPag
     @Given("user is on manage customer page")
     public void user_is_on_manage_customer_page() {
         Driver.login("Employee");
-        employeManageCustomerPage.myOperations.click();
-        employeManageCustomerPage.manageCustomers.click();
+        Driver.waitAndClick(employeManageCustomerPage.myOperations,5);
+        Driver.waitAndClick(employeManageCustomerPage.manageCustomers,3);
     }
 
     @Given("get the web table header")
