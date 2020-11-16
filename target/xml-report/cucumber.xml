@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="1" tests="1" time="0.541">
+    <testcase classname="" name="The old password should not be used" time="0.175">
+        <skipped><![CDATA[Given Go to given URL.......................................................undefined
+When User login.............................................................undefined
+And Click Account Menu......................................................undefined
+And Select Password button..................................................undefined
+And See Password Edit Form..................................................undefined
+And Enter the "Beck11"......................................................undefined
+And Enter a "NewPs1*".......................................................undefined
+And Verify "fifth level bar" is displayed...................................undefined
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="1" tests="1" time="0.171">
+    <testcase classname="An Employee can manage Customer" name="TC01 All customers should show up on manage customers module populating the account information of the customer &quot;First Name  Last Name  Middle Initial  Email  Mobile Phone Number  Phone Number  Address  Create Date &quot;" time="0.048">
+        <skipped><![CDATA[Given user is on manage customer page.......................................undefined
+And get the web table header................................................undefined
+Then verify the table header contains "First Name"  "Last Name"  "Middle Initial"  "Email"  "Mobile Phone Number"  "Phone Number"  "Address"  "Create Date".undefined
+]]></skipped>
+    </testcase>
+</testsuite>
