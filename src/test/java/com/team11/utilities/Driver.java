@@ -13,7 +13,6 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.safari.SafariDriver;
 import org.openqa.selenium.support.ui.*;
-import org.testng.annotations.AfterMethod;
 
 import java.time.Duration;
 import java.util.ArrayList;
@@ -486,9 +485,6 @@ public class Driver {
     }
 
         }
-        @AfterMethod
-        public void tearDown(){
-            closeDriver();
 
 
         }
