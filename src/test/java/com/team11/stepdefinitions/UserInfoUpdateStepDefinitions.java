@@ -17,7 +17,7 @@ public class UserInfoUpdateStepDefinitions {
     @Given("user goes login with Employee")
     public void user_goes_login_with_Employee() {
     Driver.login("Employee");
-    Driver.wait(6);
+    Driver.wait(3);
          }
 
     @Given("user click employee name")
@@ -44,12 +44,6 @@ public class UserInfoUpdateStepDefinitions {
     @Then("user assert that user account can not update with invalid email address")
     public void user_assert_that_user_account_can_not_update_with_invalid_email_address() {
         Driver.verifyElementDisplayed(userInfoPage.userInfoUpdateFailed);
+        Driver.closeDriver();
     }
-
-
-
-
-
-
-
 }

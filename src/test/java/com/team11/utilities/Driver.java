@@ -486,12 +486,7 @@ public class Driver {
     }
 
         }
-        @AfterMethod
-        public void tearDown(){
-            closeDriver();
 
-
-        }
 
     public static void selectDropDownByIndex(WebDriver driver, WebElement element, int index) {
         Select select = new Select(element);

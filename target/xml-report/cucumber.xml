@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="33.578">
+<testcase classname="API Test" name="TC_01_Read all customers you created and validate them from your data set" time="22.267">
+<system-out><![CDATA[Given user go to Gmibank Api adress and assert it...........................passed
+Given user gets all data and read...........................................passed
+And user verifies user data and previously created data.....................passed
+]]></system-out>
+</testcase>
+<testcase classname="API Test" name="TC_02_Read all customers you created and validate them 1 by 1" time="10.543">
+<system-out><![CDATA[Given user go to Gmibank Api adress and assert it...........................passed
+Given user gets all data and read...........................................passed
+And user verifies user data and previously created data one by one..........passed
+]]></system-out>
+</testcase>
+</testsuite>

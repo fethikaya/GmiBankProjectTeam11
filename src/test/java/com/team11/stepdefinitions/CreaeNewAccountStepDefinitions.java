@@ -4,7 +4,7 @@ import com.team11.pages.CreateANewAccount;
 import com.team11.utilities.ConfigurationReader;
 import com.team11.utilities.Driver;
 import io.cucumber.java.en.Given;
-public class CreaeNewAccountStepDefinitions {
+public class CreaeNewAccountStepDefinitions {/*
     CreateANewAccount createANewAccount=new CreateANewAccount();
         @Given(value = "User goes login with Employee")
         public void user_goes_login_with_Employee() {
@@ -32,7 +32,7 @@ public class CreaeNewAccountStepDefinitions {
         }
 
 
-
+*/
 
 
     }
