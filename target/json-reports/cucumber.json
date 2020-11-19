@@ -4,27 +4,17 @@
     "elements": [
       {
         "line": 3,
-        "name": "User goes to employee page clicks to my operations and clicks to manage Customers",
+        "name": "User Goes Create New Account Page",
         "description": "",
         "type": "background",
         "keyword": "Background",
-        "steps": []
-      },
-      {
-        "start_timestamp": "2020-11-16T04:55:16.269Z",
-        "line": 4,
-        "name": "TC01 All customers should show up on manage customers module populating the account information of the customer \"First Name  Last Name  Middle Initial  Email  Mobile Phone Number  Phone Number  Address  Create Date \"",
-        "description": "",
-        "id": "an-employee-can-manage-customer;tc01-all-customers-should-show-up-on-manage-customers-module-populating-the-account-information-of-the-customer-\"first-name--last-name--middle-initial--email--mobile-phone-number--phone-number--address--create-date-\"",
-        "type": "scenario",
-        "keyword": "Scenario",
         "steps": [
           {
             "result": {
               "status": "undefined"
             },
-            "line": 5,
-            "name": "user is on manage customer page",
+            "line": 4,
+            "name": "User goes login with Employee",
             "match": {},
             "keyword": "Given "
           },
@@ -32,8 +22,17 @@
             "result": {
               "status": "undefined"
             },
+            "line": 5,
+            "name": "User click  My Operations button",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
             "line": 6,
-            "name": "get the web table header",
+            "name": "User select Manage Accounts button",
             "match": {},
             "keyword": "And "
           },
@@ -42,26 +41,58 @@
               "status": "undefined"
             },
             "line": 7,
-            "name": "verify the table header contains \"First Name\"  \"Last Name\"  \"Middle Initial\"  \"Email\"  \"Mobile Phone Number\"  \"Phone Number\"  \"Address\"  \"Create Date\"",
+            "name": "User click Create a new Account button",
             "match": {},
-            "keyword": "Then "
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-14T23:46:00.415Z",
+        "line": 19,
+        "name": "TC_03_User should provide a balance for the first time account creation as Dollar",
+        "description": "",
+        "id": "user-create-a-new-account;tc-03-user-should-provide-a-balance-for-the-first-time-account-creation-as-dollar",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 20,
+            "name": "User  dont send anything to Balance box",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 21,
+            "name": "User click save button",
+            "match": {},
+            "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@tableHeaderCustomers"
+            "name": "@createNewAccount"
+          },
+          {
+            "name": "@InBalance"
           }
         ]
       }
     ],
-    "name": "An Employee can manage Customer",
+    "name": "User Create A New Account",
     "description": "",
-    "id": "an-employee-can-manage-customer",
+    "id": "user-create-a-new-account",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/US_012EmployeeCanManageCustomer.feature",
+    "uri": "file:src/test/resources/features/US_0013.feature",
     "tags": [
       {
-        "name": "@tableHeaderCustomers",
+        "name": "@createNewAccount",
         "type": "Tag",
         "location": {
           "line": 1,
