@@ -1,3 +1,9 @@
+<<<<<<< HEAD
+@api
+Feature: API Test
+  Scenario:TC01_kullanici apinin calistini kontrol eder
+    Given kullanici kendisine verilen token ile apiye baglanir
+=======
 @datecreate
 Feature:US_014_Date creation
 
@@ -51,3 +57,4 @@ Feature:US_014_Date creation
     And Click on Manage Accounts
     And Click an ID item to choose an account created on manage accounts
     Then Verify Account
+>>>>>>> origin/master
