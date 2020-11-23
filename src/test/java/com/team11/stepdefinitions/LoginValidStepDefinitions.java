@@ -11,12 +11,12 @@ import io.cucumber.java.en.Given;
 
 public class LoginValidStepDefinitions {
 
-
+/*
     GmiSignInPage gmiSignInPage = new GmiSignInPage();
 
 
     @Given("I am on home page")
-    public void iAmOnHomePage() {
+    public void iAmOnHomePage1() {
         Driver.getDriver().get(ConfigurationReader.getProperty("url"));
         Driver.waitAndClick(gmiSignInPage.accountMenu, 3);
         Driver.waitAndClick(gmiSignInPage.SignIn, 3);
@@ -28,5 +28,5 @@ public class LoginValidStepDefinitions {
     public void userLogsInAs(String role) {
         gmiSignInPage.login(role);
 
-    }
+    }*/
 }

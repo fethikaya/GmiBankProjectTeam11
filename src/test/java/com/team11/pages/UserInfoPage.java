@@ -19,5 +19,11 @@ public class UserInfoPage {
     public WebElement userInfoSaveButton;
     @FindBy(xpath = "//div[@class='invalid-feedback']")
     public WebElement userInfoUpdateFailed;
+    @FindBy(xpath = "(//a[@class='dropdown-item'])[3]")
+    public WebElement userInfoSelect;
+
+    @FindBy(id = "langKey")
+    public WebElement languageDropdown;
+
 
 }
