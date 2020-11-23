@@ -48,11 +48,11 @@
         ]
       },
       {
-        "start_timestamp": "2020-11-14T23:46:00.415Z",
-        "line": 19,
-        "name": "TC_03_User should provide a balance for the first time account creation as Dollar",
+        "start_timestamp": "2020-11-16T20:02:17.415Z",
+        "line": 9,
+        "name": "User should create a description for the new account and it cannot be blank",
         "description": "",
-        "id": "user-create-a-new-account;tc-03-user-should-provide-a-balance-for-the-first-time-account-creation-as-dollar",
+        "id": "user-create-a-new-account;user-should-create-a-description-for-the-new-account-and-it-cannot-be-blank",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
@@ -60,8 +60,8 @@
             "result": {
               "status": "undefined"
             },
-            "line": 20,
-            "name": "User  dont send anything to Balance box",
+            "line": 10,
+            "name": "User  dont send anything to Description box",
             "match": {},
             "keyword": "And "
           },
@@ -69,10 +69,19 @@
             "result": {
               "status": "undefined"
             },
-            "line": 21,
+            "line": 11,
             "name": "User click save button",
             "match": {},
             "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 12,
+            "name": "User takes warning message",
+            "match": {},
+            "keyword": "Then "
           }
         ],
         "tags": [
@@ -80,7 +89,7 @@
             "name": "@createNewAccount"
           },
           {
-            "name": "@InBalance"
+            "name": "@InDescription"
           }
         ]
       }
@@ -89,7 +98,7 @@
     "description": "",
     "id": "user-create-a-new-account",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/US_0013.feature",
+    "uri": "file:src/test/resources/features/creaeNewAccount.feature",
     "tags": [
       {
         "name": "@createNewAccount",

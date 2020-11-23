@@ -1,4 +1,4 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/US_0013.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/creaeNewAccount.feature");
 formatter.feature({
   "name": "User Create A New Account",
   "description": "",
@@ -47,7 +47,7 @@ formatter.result({
   "status": "undefined"
 });
 formatter.scenario({
-  "name": "TC_03_User should provide a balance for the first time account creation as Dollar",
+  "name": "User should create a description for the new account and it cannot be blank",
   "description": "",
   "keyword": "Scenario",
   "tags": [
@@ -55,12 +55,12 @@ formatter.scenario({
       "name": "@createNewAccount"
     },
     {
-      "name": "@InBalance"
+      "name": "@InDescription"
     }
   ]
 });
 formatter.step({
-  "name": "User  dont send anything to Balance box",
+  "name": "User  dont send anything to Description box",
   "keyword": "And "
 });
 formatter.match({});
@@ -70,6 +70,14 @@ formatter.result({
 formatter.step({
   "name": "User click save button",
   "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "User takes warning message",
+  "keyword": "Then "
 });
 formatter.match({});
 formatter.result({
