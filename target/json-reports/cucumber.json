@@ -3,97 +3,466 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-11-25T23:37:29.662Z",
-        "before": [
-          {
-            "result": {
-              "duration": 4000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.team11.stepdefinitions.Hooks.setUp()"
-            }
-          }
-        ],
         "line": 4,
-        "name": "TC_01_Read all customers you created and validate them from your data set",
+        "name": "",
         "description": "",
-        "id": "us-20-validate-all-customer-info;tc-01-read-all-customers-you-created-and-validate-them-from-your-data-set",
-        "after": [
-          {
-            "result": {
-              "duration": 11000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.team11.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
+        "type": "background",
+        "keyword": "Background",
         "steps": [
           {
             "result": {
-              "duration": 8516000000,
+              "duration": 8677000000,
               "status": "passed"
             },
             "line": 5,
-            "name": "user sets all response using end point \"https://www.gmibank.com/api/tp-customers\"",
+            "name": "user on the registration page",
+            "match": {
+              "location": "com.team11.stepdefinitions.RegistratiionSteps.user_on_the_registration_page()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-20T20:29:05.129Z",
+        "line": 23,
+        "name": "registration page negatif scenarios",
+        "description": "",
+        "id": "system-should-not-allow-anyone-to-register-with-invalid-credentials;registration-page-negatif-scenarios;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 319000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user types the \"\" and the",
             "match": {
               "arguments": [
                 {
-                  "val": "\"https://www.gmibank.com/api/tp-customers\"",
-                  "offset": 39
+                  "val": "\"\"",
+                  "offset": 15
                 }
               ],
-              "location": "com.team11.stepdefinitions.ApiStepDefinitions.user_sets_all_response_using_end_point(java.lang.String)"
+              "location": "com.team11.stepdefinitions.RegistratiionSteps.user_types_the_and_the(java.lang.String)"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 90000000,
+              "duration": 163000000,
               "status": "passed"
             },
-            "line": 6,
-            "name": "user deserialization data json to java pojo",
+            "line": 10,
+            "name": "user provides \"\" and",
             "match": {
-              "location": "com.team11.stepdefinitions.ApiStepDefinitions.user_deserialization_data_json_to_java_pojo()"
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 14
+                }
+              ],
+              "location": "com.team11.stepdefinitions.RegistratiionSteps.user_provides_and(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 2744000000,
+              "duration": 129000000,
               "status": "passed"
             },
-            "line": 7,
-            "name": "user validates data.",
+            "line": 11,
+            "name": "user provides the lastname as  \"\" and",
             "match": {
-              "location": "com.team11.stepdefinitions.ApiStepDefinitions.user_validates_data()"
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 31
+                }
+              ],
+              "location": "com.team11.stepdefinitions.RegistratiionSteps.user_provides_the_lastname_as_and(java.lang.String)"
             },
             "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 137000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user provides the \"\" information",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 18
+                }
+              ],
+              "location": "com.team11.stepdefinitions.RegistratiionSteps.user_provides_the_information(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 128000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user provides the \"\" and",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 18
+                }
+              ],
+              "location": "com.team11.stepdefinitions.RegistratiionSteps.user_provides_the_and(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 132000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user provides the username as \"\" and",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 30
+                }
+              ],
+              "location": "com.team11.stepdefinitions.RegistratiionSteps.user_provides_the_username_as_and(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 140000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user provides the email as \"\" and the",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 27
+                }
+              ],
+              "location": "com.team11.stepdefinitions.RegistratiionSteps.user_provides_the_email_as_and_the(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 133000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user provides the new password as \"\" and",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 34
+                }
+              ],
+              "location": "com.team11.stepdefinitions.RegistratiionSteps.user_provides_the_new_password_as_and(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 128000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user provides the confirm password \"\" and the",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 35
+                }
+              ],
+              "location": "com.team11.stepdefinitions.RegistratiionSteps.user_provides_the_confirm_password_and_the(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 134000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user click to register button",
+            "match": {
+              "location": "com.team11.stepdefinitions.RegistratiionSteps.user_click_to_register_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 526000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User assert that should see cant registration default credentials",
+            "match": {
+              "location": "com.team11.stepdefinitions.RegistratiionSteps.user_assert_that_should_see_cant_registration_default_credentials()"
+            },
+            "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@customerDBTest"
+            "name": "@registrationPageTest"
           },
           {
-            "name": "@allCustomerValidate"
+            "name": "@RegistrationInvalid"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 573000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user on the registration page",
+            "match": {
+              "location": "com.team11.stepdefinitions.RegistratiionSteps.user_on_the_registration_page()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-20T20:29:16.077Z",
+        "line": 24,
+        "name": "registration page negatif scenarios",
+        "description": "",
+        "id": "system-should-not-allow-anyone-to-register-with-invalid-credentials;registration-page-negatif-scenarios;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 367000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user types the \"x33-33-5555\" and the",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"x33-33-5555\"",
+                  "offset": 15
+                }
+              ],
+              "location": "com.team11.stepdefinitions.RegistratiionSteps.user_types_the_and_the(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 162000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user provides \"\" and",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 14
+                }
+              ],
+              "location": "com.team11.stepdefinitions.RegistratiionSteps.user_provides_and(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 130000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user provides the lastname as  \"\" and",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 31
+                }
+              ],
+              "location": "com.team11.stepdefinitions.RegistratiionSteps.user_provides_the_lastname_as_and(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 140000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user provides the \"\" information",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 18
+                }
+              ],
+              "location": "com.team11.stepdefinitions.RegistratiionSteps.user_provides_the_information(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 117000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user provides the \"\" and",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 18
+                }
+              ],
+              "location": "com.team11.stepdefinitions.RegistratiionSteps.user_provides_the_and(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 137000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user provides the username as \"\" and",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 30
+                }
+              ],
+              "location": "com.team11.stepdefinitions.RegistratiionSteps.user_provides_the_username_as_and(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 128000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user provides the email as \"\" and the",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 27
+                }
+              ],
+              "location": "com.team11.stepdefinitions.RegistratiionSteps.user_provides_the_email_as_and_the(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 134000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user provides the new password as \"\" and",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 34
+                }
+              ],
+              "location": "com.team11.stepdefinitions.RegistratiionSteps.user_provides_the_new_password_as_and(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 151000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user provides the confirm password \"\" and the",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 35
+                }
+              ],
+              "location": "com.team11.stepdefinitions.RegistratiionSteps.user_provides_the_confirm_password_and_the(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 135000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user click to register button",
+            "match": {
+              "location": "com.team11.stepdefinitions.RegistratiionSteps.user_click_to_register_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 552000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User assert that should see cant registration default credentials",
+            "match": {
+              "location": "com.team11.stepdefinitions.RegistratiionSteps.user_assert_that_should_see_cant_registration_default_credentials()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@registrationPageTest"
+          },
+          {
+            "name": "@RegistrationInvalid"
           }
         ]
       }
     ],
-    "name": "US_20_Validate All Customer Info",
+    "name": "System should not allow anyone to register with invalid credentials",
     "description": "",
-    "id": "us-20-validate-all-customer-info",
+    "id": "system-should-not-allow-anyone-to-register-with-invalid-credentials",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/api.feature",
+    "uri": "file:src/test/resources/features/RegistrationPage.feature",
     "tags": [
       {
-        "name": "@customerDBTest",
+        "name": "@registrationPageTest",
         "type": "Tag",
         "location": {
           "line": 1,
