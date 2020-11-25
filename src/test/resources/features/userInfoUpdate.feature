@@ -19,7 +19,7 @@
         |abc@gmail#arcihe.com  |
         |abcdef@gmail          |
         |abc@gmail..com        |
-      @languageOption
+    @languageOption
       Scenario: TC_02_There should not be an option of any other language other than English or Turkish
         Given user give an option language dropdown
         Then user assert that there is no option other than English and Turkish
