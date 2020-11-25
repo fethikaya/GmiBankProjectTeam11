@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="49.002">
-    <testcase classname="An Employee can manage Customer" name="TC01 All customers should show up on manage customers module populating the account information of the customer &quot;First Name  Last Name  Middle Initial  Email  Mobile Phone Number  Phone Number  Address  Create Date &quot;" time="48.845">
-        <system-out><![CDATA[Given user is on manage customer page.......................................passed
-And get the web table header................................................passed
-Then verify the table header contains "First Name"  "Last Name"  "Middle Initial"  "Email"  "Mobile Phone Number"  "Phone Number"  "Address"  "Create Date".passed
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="10.232">
+    <testcase classname="An Employee can manage Customer" name="All customers should show up on manage customers module populating the account information of the customer" time="10.083">
+        <system-out><![CDATA[Given Go to gmibank.com home page...........................................passed
+And Click to User Account Menu and Click to Sign In.........................passed
+And Enter the username with valid credentail................................passed
+And Enter the pasword with valid credentail.................................passed
+And Click to Sign in button.................................................passed
+And Click to My Operations drop down menu and Click to Manage Costumers.....passed
+And click to last page button...............................................passed
+Then A customer should show up at total nine head on account information of the customer.passed
 ]]></system-out>
     </testcase>
 </testsuite>

@@ -3,96 +3,117 @@
     "line": 2,
     "elements": [
       {
-        "line": 3,
-        "name": "User goes to employee page clicks to my operations and clicks to manage Customers",
+        "start_timestamp": "2020-11-25T23:49:42.710Z",
+        "line": 5,
+        "name": "All customers should show up on manage customers module populating the account information of the customer",
         "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": []
-      },
-      {
-        "start_timestamp": "2020-11-16T16:32:09.350Z",
-        "line": 4,
-        "name": "TC01 All customers should show up on manage customers module populating the account information of the customer \"First Name  Last Name  Middle Initial  Email  Mobile Phone Number  Phone Number  Address  Create Date \"",
-        "description": "",
-        "id": "an-employee-can-manage-customer;tc01-all-customers-should-show-up-on-manage-customers-module-populating-the-account-information-of-the-customer-\"first-name--last-name--middle-initial--email--mobile-phone-number--phone-number--address--create-date-\"",
+        "id": "an-employee-can-manage-customer;all-customers-should-show-up-on-manage-customers-module-populating-the-account-information-of-the-customer",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 48697186700,
+              "duration": 8449047000,
               "status": "passed"
             },
-            "line": 5,
-            "name": "user is on manage customer page",
+            "line": 6,
+            "name": "Go to gmibank.com home page",
             "match": {
-              "location": "com.team11.stepdefinitions.CustomersWebTableStepDefinitions.user_is_on_manage_customer_page()"
+              "location": "com.team11.stepdefinitions.ManageCostumerStepDef.goToGmibankComHomePage()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 60819500,
+              "duration": 177308100,
               "status": "passed"
             },
-            "line": 6,
-            "name": "get the web table header",
+            "line": 7,
+            "name": "Click to User Account Menu and Click to Sign In",
             "match": {
-              "location": "com.team11.stepdefinitions.CustomersWebTableStepDefinitions.get_the_web_table_header()"
+              "location": "com.team11.stepdefinitions.ManageCostumerStepDef.clickToUserAccountMenuAndClickToSignIn()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 34575600,
+              "duration": 84734100,
               "status": "passed"
             },
-            "line": 7,
-            "name": "verify the table header contains \"First Name\"  \"Last Name\"  \"Middle Initial\"  \"Email\"  \"Mobile Phone Number\"  \"Phone Number\"  \"Address\"  \"Create Date\"",
+            "line": 8,
+            "name": "Enter the username with valid credentail",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"First Name\"",
-                  "offset": 33
-                },
-                {
-                  "val": "\"Last Name\"",
-                  "offset": 47
-                },
-                {
-                  "val": "\"Middle Initial\"",
-                  "offset": 60
-                },
-                {
-                  "val": "\"Email\"",
-                  "offset": 78
-                },
-                {
-                  "val": "\"Mobile Phone Number\"",
-                  "offset": 87
-                },
-                {
-                  "val": "\"Phone Number\"",
-                  "offset": 110
-                },
-                {
-                  "val": "\"Address\"",
-                  "offset": 126
-                },
-                {
-                  "val": "\"Create Date\"",
-                  "offset": 137
-                }
-              ],
-              "location": "com.team11.stepdefinitions.CustomersWebTableStepDefinitions.verify_the_table_header_contains(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+              "location": "com.team11.stepdefinitions.ManageCostumerStepDef.enterTheUsernameWithValidCredentail()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 108275600,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Enter the pasword with valid credentail",
+            "match": {
+              "location": "com.team11.stepdefinitions.ManageCostumerStepDef.enterThePaswordWithValidCredentail()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 76622700,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Click to Sign in button",
+            "match": {
+              "location": "com.team11.stepdefinitions.ManageCostumerStepDef.clickToSignInButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 372473700,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Click to My Operations drop down menu and Click to Manage Costumers",
+            "match": {
+              "location": "com.team11.stepdefinitions.ManageCostumerStepDef.clickToMyOperationsDropDownMenuAndClickToManageCostumers()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 411642200,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "click to last page button",
+            "match": {
+              "location": "com.team11.stepdefinitions.ManageCostumerStepDef.clickToLastPageButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 345339400,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "A customer should show up at total nine head on account information of the customer",
+            "match": {
+              "location": "com.team11.stepdefinitions.ManageCostumerStepDef.aCustomerShouldShowUpAtTotalNineHeadOnAccountInformationOfTheCustomer()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@tableHeaderCustomers"
+            "name": "@US12"
+          },
+          {
+            "name": "@US12TC01"
           }
         ]
       }
@@ -101,10 +122,10 @@
     "description": "",
     "id": "an-employee-can-manage-customer",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/US_012EmployeeCanManageCustomer.feature",
+    "uri": "file:src/test/resources/features/EmployeeManageCustomer.feature",
     "tags": [
       {
-        "name": "@tableHeaderCustomers",
+        "name": "@US12",
         "type": "Tag",
         "location": {
           "line": 1,

@@ -1,55 +1,103 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/US_012EmployeeCanManageCustomer.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/EmployeeManageCustomer.feature");
 formatter.feature({
   "name": "An Employee can manage Customer",
   "description": "",
   "keyword": "Feature",
   "tags": [
     {
-      "name": "@tableHeaderCustomers"
+      "name": "@US12"
     }
   ]
 });
-formatter.background({
-  "name": "User goes to employee page clicks to my operations and clicks to manage Customers",
-  "description": "",
-  "keyword": "Background"
-});
 formatter.scenario({
-  "name": "TC01 All customers should show up on manage customers module populating the account information of the customer \"First Name  Last Name  Middle Initial  Email  Mobile Phone Number  Phone Number  Address  Create Date \"",
+  "name": "All customers should show up on manage customers module populating the account information of the customer",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@tableHeaderCustomers"
+      "name": "@US12"
+    },
+    {
+      "name": "@US12TC01"
     }
   ]
 });
 formatter.step({
-  "name": "user is on manage customer page",
+  "name": "Go to gmibank.com home page",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "com.team11.stepdefinitions.CustomersWebTableStepDefinitions.user_is_on_manage_customer_page()"
+  "location": "com.team11.stepdefinitions.ManageCostumerStepDef.goToGmibankComHomePage()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "get the web table header",
+  "name": "Click to User Account Menu and Click to Sign In",
   "keyword": "And "
 });
 formatter.match({
-  "location": "com.team11.stepdefinitions.CustomersWebTableStepDefinitions.get_the_web_table_header()"
+  "location": "com.team11.stepdefinitions.ManageCostumerStepDef.clickToUserAccountMenuAndClickToSignIn()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "verify the table header contains \"First Name\"  \"Last Name\"  \"Middle Initial\"  \"Email\"  \"Mobile Phone Number\"  \"Phone Number\"  \"Address\"  \"Create Date\"",
+  "name": "Enter the username with valid credentail",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.team11.stepdefinitions.ManageCostumerStepDef.enterTheUsernameWithValidCredentail()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Enter the pasword with valid credentail",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.team11.stepdefinitions.ManageCostumerStepDef.enterThePaswordWithValidCredentail()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click to Sign in button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.team11.stepdefinitions.ManageCostumerStepDef.clickToSignInButton()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click to My Operations drop down menu and Click to Manage Costumers",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.team11.stepdefinitions.ManageCostumerStepDef.clickToMyOperationsDropDownMenuAndClickToManageCostumers()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "click to last page button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.team11.stepdefinitions.ManageCostumerStepDef.clickToLastPageButton()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "A customer should show up at total nine head on account information of the customer",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "com.team11.stepdefinitions.CustomersWebTableStepDefinitions.verify_the_table_header_contains(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+  "location": "com.team11.stepdefinitions.ManageCostumerStepDef.aCustomerShouldShowUpAtTotalNineHeadOnAccountInformationOfTheCustomer()"
 });
 formatter.result({
   "status": "passed"
