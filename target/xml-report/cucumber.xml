@@ -1,13 +1,83 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="1" tests="1" time="0.459">
-<testcase classname="User Create A New Account" name="User should create a description for the new account and it cannot be blank" time="0.146">
-<skipped><![CDATA[Given User goes login with Employee.........................................undefined
-And User click  My Operations button........................................undefined
-And User select Manage Accounts button......................................undefined
-And User click Create a new Account button..................................undefined
-And User  dont send anything to Description box.............................undefined
-And User click save button..................................................undefined
-Then User takes warning message.............................................undefined
-]]></skipped>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="9" time="316.687">
+<testcase classname="US_07_User Can't Update Invalid Credentials" name="TC_01_user can not update with invalid email address" time="41.074">
+<system-out><![CDATA[Given user goes login with Employee.........................................passed
+And user click employee name................................................passed
+And user select user info...................................................passed
+Given user send "abcdefghgmail.com" into the email box......................passed
+And user click save button..................................................passed
+Then user assert that user account can not update with invalid email address.passed
+]]></system-out>
+</testcase>
+<testcase classname="US_07_User Can't Update Invalid Credentials" name="TC_01_user can not update with invalid email address 2" time="31.481">
+<system-out><![CDATA[Given user goes login with Employee.........................................passed
+And user click employee name................................................passed
+And user select user info...................................................passed
+Given user send "abc..def@gmail.com" into the email box.....................passed
+And user click save button..................................................passed
+Then user assert that user account can not update with invalid email address.passed
+]]></system-out>
+</testcase>
+<testcase classname="US_07_User Can't Update Invalid Credentials" name="TC_01_user can not update with invalid email address 3" time="32.697">
+<system-out><![CDATA[Given user goes login with Employee.........................................passed
+And user click employee name................................................passed
+And user select user info...................................................passed
+Given user send ".abc@gmail.com" into the email box.........................passed
+And user click save button..................................................passed
+Then user assert that user account can not update with invalid email address.passed
+]]></system-out>
+</testcase>
+<testcase classname="US_07_User Can't Update Invalid Credentials" name="TC_01_user can not update with invalid email address 4" time="37.281">
+<system-out><![CDATA[Given user goes login with Employee.........................................passed
+And user click employee name................................................passed
+And user select user info...................................................passed
+Given user send "@gmail.com" into the email box.............................passed
+And user click save button..................................................passed
+Then user assert that user account can not update with invalid email address.passed
+]]></system-out>
+</testcase>
+<testcase classname="US_07_User Can't Update Invalid Credentials" name="TC_01_user can not update with invalid email address 5" time="35.346">
+<system-out><![CDATA[Given user goes login with Employee.........................................passed
+And user click employee name................................................passed
+And user select user info...................................................passed
+Given user send "abcdef@gmail." into the email box..........................passed
+And user click save button..................................................passed
+Then user assert that user account can not update with invalid email address.passed
+]]></system-out>
+</testcase>
+<testcase classname="US_07_User Can't Update Invalid Credentials" name="TC_01_user can not update with invalid email address 6" time="34.98">
+<system-out><![CDATA[Given user goes login with Employee.........................................passed
+And user click employee name................................................passed
+And user select user info...................................................passed
+Given user send "abc@gmail#arcihe.com" into the email box...................passed
+And user click save button..................................................passed
+Then user assert that user account can not update with invalid email address.passed
+]]></system-out>
+</testcase>
+<testcase classname="US_07_User Can't Update Invalid Credentials" name="TC_01_user can not update with invalid email address 7" time="35.521">
+<system-out><![CDATA[Given user goes login with Employee.........................................passed
+And user click employee name................................................passed
+And user select user info...................................................passed
+Given user send "abcdef@gmail" into the email box...........................passed
+And user click save button..................................................passed
+Then user assert that user account can not update with invalid email address.passed
+]]></system-out>
+</testcase>
+<testcase classname="US_07_User Can't Update Invalid Credentials" name="TC_01_user can not update with invalid email address 8" time="36.698">
+<system-out><![CDATA[Given user goes login with Employee.........................................passed
+And user click employee name................................................passed
+And user select user info...................................................passed
+Given user send "abc@gmail..com" into the email box.........................passed
+And user click save button..................................................passed
+Then user assert that user account can not update with invalid email address.passed
+]]></system-out>
+</testcase>
+<testcase classname="US_07_User Can't Update Invalid Credentials" name="TC_02_There should not be an option of any other language other than English or Turkish" time="30.673">
+<system-out><![CDATA[Given user goes login with Employee.........................................passed
+And user click employee name................................................passed
+And user select user info...................................................passed
+Given user give an option language dropdown.................................passed
+Then user assert that there is no option other than English and Turkish.....passed
+]]></system-out>
 </testcase>
 </testsuite>

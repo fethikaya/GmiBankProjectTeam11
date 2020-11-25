@@ -485,61 +485,17 @@ public class Driver {
     }
 
         }
-        @After
-        public void tearDown(){
-            closeDriver();
 
 
-        }
     public static void selectDropDownByIndex(WebDriver driver, WebElement element, int index) {
         Select select = new Select(element);
         select.selectByIndex(index);
     }
+
     public static void selectDropdownByVisibleText(WebDriver driver,WebElement element,String value) {
         Select select = new Select(element);
         select.selectByVisibleText(value);
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
