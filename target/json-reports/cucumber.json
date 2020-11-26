@@ -3,12 +3,12 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-11-25T23:36:08.444Z",
+        "start_timestamp": "2020-11-26T15:41:15.572Z",
         "before": [
           {
             "result": {
               "duration": 1000000,
-              "status": "skipped"
+              "status": "passed"
             },
             "match": {
               "location": "com.team11.stepdefinitions.Hooks.setUp()"
@@ -16,13 +16,14 @@
           }
         ],
         "line": 4,
-        "name": "TC_01_Read all customers you created and validate them from your data set",
+        "name": "TC_01_In countries read all customers you created and validate them from your data set",
         "description": "",
-        "id": "validate-all-customer-info;tc-01-read-all-customers-you-created-and-validate-them-from-your-data-set",
+        "id": "validate-all-customer-info;tc-01-in-countries-read-all-customers-you-created-and-validate-them-from-your-data-set",
         "after": [
           {
             "result": {
-              "status": "skipped"
+              "duration": 8000000,
+              "status": "passed"
             },
             "match": {
               "location": "com.team11.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
@@ -34,21 +35,26 @@
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 2663000000,
+              "status": "passed"
             },
             "line": 5,
-            "name": "user sets all response using end point \"https://www.gmibank.com/api/tp-countries\" \"",
-            "match": {},
+            "name": "In countries user sets all response using end point",
+            "match": {
+              "location": "com.team11.stepdefinitions.ApiCountriesStepDefination.In_countries_user_sets_all_response_using_end_point()"
+            },
             "keyword": "Given "
           },
           {
             "result": {
-              "status": "skipped"
+              "error_message": "java.lang.NullPointerException\n\tat com.team11.stepdefinitions.ApiCountriesStepDefination.In_countries_user_deserialization_data_json_to_java_pojo(ApiCountriesStepDefination.java:44)\n\tat ✽.In countries user deserialization data json to java pojo(file:///Users/zekeriyaiyimaya/IdeaProjects/GmiBankProjectTeam11/src/test/resources/features/countriesapi.feature:6)\n",
+              "duration": 2000000,
+              "status": "failed"
             },
             "line": 6,
-            "name": "user deserialization data json to java pojo",
+            "name": "In countries user deserialization data json to java pojo",
             "match": {
-              "location": "com.team11.stepdefinitions.ApiStepDefinitions.user_deserialization_data_json_to_java_pojo()"
+              "location": "com.team11.stepdefinitions.ApiCountriesStepDefination.In_countries_user_deserialization_data_json_to_java_pojo()"
             },
             "keyword": "And "
           },
@@ -58,9 +64,9 @@
               "status": "skipped"
             },
             "line": 7,
-            "name": "user validates data.",
+            "name": "In countries user validates data.",
             "match": {
-              "location": "com.team11.stepdefinitions.ApiStepDefinitions.user_validates_data()"
+              "location": "com.team11.stepdefinitions.ApiCountriesStepDefination.In_countries_user_validates_data()"
             },
             "keyword": "And "
           }

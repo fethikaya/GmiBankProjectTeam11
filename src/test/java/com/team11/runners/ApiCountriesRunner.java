@@ -11,8 +11,8 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue = "com/team11/stepdefinitions",
         tags = " @allCountriesValidate",
-        dryRun = true
+        dryRun = false
 )
 
-public class ApiCountriesStepDefination {
+public class ApiCountriesRunner {
 }
