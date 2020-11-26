@@ -42,6 +42,7 @@ Feature:System should not allow anyone to register with invalid credentials
       | 972-666-68          |
       | 972-v90-6768        |
       | 9736807889          |
+      |972-666-689v         |
 
     @RegistrationInvalidMail
     Given user provides the email as "<email>"
