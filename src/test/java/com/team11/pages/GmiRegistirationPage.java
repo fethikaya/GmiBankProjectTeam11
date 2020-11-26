@@ -25,5 +25,52 @@ public class GmiRegistirationPage {
     @FindBy(xpath = "//input[@name='lastname']")
     public  WebElement lastname;
 
+    @FindBy(xpath = "//div[@class=\'text-danger form-group\']/div")
+    public WebElement lastnameInvalidMsj;
+
+    @FindBy(id = "address")
+    public WebElement address;
+
+    @FindBy(xpath="")
+    public WebElement addressInvalidMsj;
+
+    @FindBy(id="mobilephone")
+    public WebElement mobilephone;
+
+    @FindBy(xpath="")
+    public WebElement mobilePhoneInvalidMsj;
+
+    @FindBy(id="username")
+    public WebElement username;
+
+    @FindBy(className = "invalid-feedback")
+    public WebElement userNameInvalidMsj;
+
+    @FindBy(id="email")
+    public WebElement email;
+
+    @FindBy(xpath = "//div[contains(text(),'Your email is required.')]")
+    public WebElement emailInvalidMsj;
+
+    @FindBy(id="firstPassword")
+    public WebElement newPassword;
+
+    @FindBy(xpath="//div[contains(text(),' password')]")
+    public WebElement newPasswordInvalidMsj;
+
+    @FindBy(id="secondPassword")
+    public WebElement passwordConfirmation;
+
+    @FindBy(xpath = "//div[contains(text(),'confirmation do not match!')]")
+    public WebElement passwordNotMatchMsj;
+
+    @FindBy(id="register-submit")
+    public WebElement registerationButton;
+
+
+
+
+
+
 
 }

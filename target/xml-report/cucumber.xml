@@ -1,14 +1,33 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="3.128">
-<testcase classname="Validate All Customer Info" name="TC_01_In countries read all customers you created and validate them from your data set" time="2.769">
-<failure message="" type="java.lang.NullPointerException"><![CDATA[Given In countries user sets all response using end point...................passed
-And In countries user deserialization data json to java pojo................failed
-And In countries user validates data........................................skipped
-
-StackTrace:
-java.lang.NullPointerException
-	at com.team11.stepdefinitions.ApiCountriesStepDefination.In_countries_user_deserialization_data_json_to_java_pojo(ApiCountriesStepDefination.java:44)
-	at ✽.In countries user deserialization data json to java pojo(file:///Users/zekeriyaiyimaya/IdeaProjects/GmiBankProjectTeam11/src/test/resources/features/countriesapi.feature:6)
-]]></failure>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="14.176">
+<testcase classname="System should not allow anyone to register with invalid credentials" name="registration page negatif scenarios" time="10.923">
+<system-out><![CDATA[When user on the registration page..........................................passed
+Given user types the "" and the.............................................passed
+And user provides "" and....................................................passed
+And user provides the lastname as  "" and...................................passed
+Then user provides the "" information.......................................passed
+And user provides the "" and................................................passed
+When user provides the username as "" and...................................passed
+Then user provides the email as "" and the..................................passed
+And user provides the new password as "" and................................passed
+When user provides the confirm password "" and the..........................passed
+Then user click to register button..........................................passed
+Then User assert that should see cant registration default credentials......passed
+]]></system-out>
+</testcase>
+<testcase classname="System should not allow anyone to register with invalid credentials" name="registration page negatif scenarios 2" time="2.737">
+<system-out><![CDATA[When user on the registration page..........................................passed
+Given user types the "x33-33-5555" and the..................................passed
+And user provides "" and....................................................passed
+And user provides the lastname as  "" and...................................passed
+Then user provides the "" information.......................................passed
+And user provides the "" and................................................passed
+When user provides the username as "" and...................................passed
+Then user provides the email as "" and the..................................passed
+And user provides the new password as "" and................................passed
+When user provides the confirm password "" and the..........................passed
+Then user click to register button..........................................passed
+Then User assert that should see cant registration default credentials......passed
+]]></system-out>
 </testcase>
 </testsuite>
