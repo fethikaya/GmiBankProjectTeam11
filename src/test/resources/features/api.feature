@@ -1,5 +1,5 @@
 @customerDBTest
-  Feature:Validate All Customer Info
+  Feature:US_20_Validate All Customer Info
       @allCustomerValidate
       Scenario: TC_01_Read all customers you created and validate them from your data set
         Given user sets all response using end point "https://www.gmibank.com/api/tp-customers"

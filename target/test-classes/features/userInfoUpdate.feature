@@ -1,5 +1,5 @@
 @infoUpdate
-  Feature: User Can't Update With Invalid Email
+  Feature:US_07_User Can't Update Invalid Credentials
     Background: User go to user setting page
       Given user goes login with Employee
       And user click employee name
@@ -11,13 +11,17 @@
       Then user assert that user account can not update with invalid email address
       Examples:
         |userInfoUpdateEmailBox|
-        |abcdef-@gmail.com     |
+        |abcdefghgmail.com     |
         |abc..def@gmail.com    |
         |.abc@gmail.com        |
-        |abc#def@gmail.com     |
-        |abcdef@gmail.c        |
-        |.abc@gmail#arcihe.com |
+        |       @gmail.com     |
+        |abcdef@gmail.         |
+        |abc@gmail#arcihe.com  |
         |abcdef@gmail          |
-        |.abc@gmail..com       |
+        |abc@gmail..com        |
+    @languageOption
+      Scenario: TC_02_There should not be an option of any other language other than English or Turkish
+        Given user give an option language dropdown
+        Then user assert that there is no option other than English and Turkish
 
 

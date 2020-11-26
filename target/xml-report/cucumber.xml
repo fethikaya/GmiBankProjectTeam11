@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="14.176">
+<testcase classname="System should not allow anyone to register with invalid credentials" name="registration page negatif scenarios" time="10.923">
+<system-out><![CDATA[When user on the registration page..........................................passed
+Given user types the "" and the.............................................passed
+And user provides "" and....................................................passed
+And user provides the lastname as  "" and...................................passed
+Then user provides the "" information.......................................passed
+And user provides the "" and................................................passed
+When user provides the username as "" and...................................passed
+Then user provides the email as "" and the..................................passed
+And user provides the new password as "" and................................passed
+When user provides the confirm password "" and the..........................passed
+Then user click to register button..........................................passed
+Then User assert that should see cant registration default credentials......passed
+]]></system-out>
+</testcase>
+<testcase classname="System should not allow anyone to register with invalid credentials" name="registration page negatif scenarios 2" time="2.737">
+<system-out><![CDATA[When user on the registration page..........................................passed
+Given user types the "x33-33-5555" and the..................................passed
+And user provides "" and....................................................passed
+And user provides the lastname as  "" and...................................passed
+Then user provides the "" information.......................................passed
+And user provides the "" and................................................passed
+When user provides the username as "" and...................................passed
+Then user provides the email as "" and the..................................passed
+And user provides the new password as "" and................................passed
+When user provides the confirm password "" and the..........................passed
+Then user click to register button..........................................passed
+Then User assert that should see cant registration default credentials......passed
+]]></system-out>
+</testcase>
+</testsuite>
