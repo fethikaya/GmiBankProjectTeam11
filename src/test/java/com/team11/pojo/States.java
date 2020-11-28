@@ -3,6 +3,7 @@ package com.team11.pojo;
 public class States {
     private Integer id;
     private String name;
+    private Country country;
 
     public String getName() {
         return name;
@@ -18,5 +19,13 @@ public class States {
 
     public void setId(Integer id) {
         this.id = id;
+    }
+
+    public Country getCountry() {
+        return country;
+    }
+
+    public void setCountry(Country country) {
+        this.country = country;
     }
 }
