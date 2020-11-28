@@ -9,8 +9,8 @@ import org.junit.runner.RunWith;
                 "json:target/json-reports/cucumber.json",
                 "junit:target/xml-report/cucumber.xml"},
         features = "src/test/resources/features",
-        glue = "gmibank/stepdefinitions",
-        tags = "@createNewAccount",
+        glue = "com/team11/stepdefinitions",
+        tags = "@CreateNewAcountUS13",
         dryRun = false
 )
 
