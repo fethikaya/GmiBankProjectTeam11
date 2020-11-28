@@ -3,96 +3,97 @@
     "line": 2,
     "elements": [
       {
-        "line": 3,
-        "name": "User Goes Create New Account Page",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
+        "start_timestamp": "2020-11-28T02:39:32.057Z",
+        "before": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 1000000,
+              "status": "passed"
             },
-            "line": 4,
-            "name": "User goes login with Employee",
-            "match": {},
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 5,
-            "name": "User click  My Operations button",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 6,
-            "name": "User select Manage Accounts button",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 7,
-            "name": "User click Create a new Account button",
-            "match": {},
-            "keyword": "And "
+            "match": {
+              "location": "com.team11.stepdefinitions.Hooks.setUp()"
+            }
           }
-        ]
-      },
-      {
-        "start_timestamp": "2020-11-14T23:46:00.415Z",
-        "line": 19,
-        "name": "TC_03_User should provide a balance for the first time account creation as Dollar",
+        ],
+        "line": 4,
+        "name": "States read all state you created and validate them from your data set",
         "description": "",
-        "id": "user-create-a-new-account;tc-03-user-should-provide-a-balance-for-the-first-time-account-creation-as-dollar",
+        "id": "us-0022-states;states-read-all-state-you-created-and-validate-them-from-your-data-set",
+        "after": [
+          {
+            "result": {
+              "duration": 9000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.team11.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 2392000000,
+              "status": "passed"
             },
-            "line": 20,
-            "name": "User  dont send anything to Balance box",
-            "match": {},
+            "line": 5,
+            "name": "In States user sets all response using end point \"https://www.gmibank.com/api/tp-states\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.gmibank.com/api/tp-states\"",
+                  "offset": 49
+                }
+              ],
+              "location": "com.team11.stepdefinitions.stateApiDefinations.In_States_user_sets_all_response_using_end_point(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 28000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "In States user deserialization data json to java pojo",
+            "match": {
+              "location": "com.team11.stepdefinitions.stateApiDefinations.In_States_user_deserialization_data_json_to_java_pojo()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 774000000,
+              "status": "passed"
             },
-            "line": 21,
-            "name": "User click save button",
-            "match": {},
+            "line": 7,
+            "name": "In States user validates data.",
+            "match": {
+              "location": "com.team11.stepdefinitions.stateApiDefinations.In_States_user_validates_data()"
+            },
             "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@createNewAccount"
+            "name": "@StatesDBTest"
           },
           {
-            "name": "@InBalance"
+            "name": "@allStatesValidate"
           }
         ]
       }
     ],
-    "name": "User Create A New Account",
+    "name": "US_0022 States",
     "description": "",
-    "id": "user-create-a-new-account",
+    "id": "us-0022-states",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/US_0013.feature",
+    "uri": "file:src/test/resources/features/stateApi.feature",
     "tags": [
       {
-        "name": "@createNewAccount",
+        "name": "@StatesDBTest",
         "type": "Tag",
         "location": {
           "line": 1,

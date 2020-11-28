@@ -1,78 +1,61 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/US_0013.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/stateApi.feature");
 formatter.feature({
-  "name": "User Create A New Account",
+  "name": "US_0022 States",
   "description": "",
   "keyword": "Feature",
   "tags": [
     {
-      "name": "@createNewAccount"
+      "name": "@StatesDBTest"
     }
   ]
 });
-formatter.background({
-  "name": "User Goes Create New Account Page",
-  "description": "",
-  "keyword": "Background"
-});
-formatter.step({
-  "name": "User goes login with Employee",
-  "keyword": "Given "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.step({
-  "name": "User click  My Operations button",
-  "keyword": "And "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.step({
-  "name": "User select Manage Accounts button",
-  "keyword": "And "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.step({
-  "name": "User click Create a new Account button",
-  "keyword": "And "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
 formatter.scenario({
-  "name": "TC_03_User should provide a balance for the first time account creation as Dollar",
+  "name": "States read all state you created and validate them from your data set",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@createNewAccount"
+      "name": "@StatesDBTest"
     },
     {
-      "name": "@InBalance"
+      "name": "@allStatesValidate"
     }
   ]
 });
-formatter.step({
-  "name": "User  dont send anything to Balance box",
-  "keyword": "And "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
+formatter.before({
+  "status": "passed"
 });
 formatter.step({
-  "name": "User click save button",
+  "name": "In States user sets all response using end point \"https://www.gmibank.com/api/tp-states\"",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "com.team11.stepdefinitions.stateApiDefinations.In_States_user_sets_all_response_using_end_point(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "In States user deserialization data json to java pojo",
   "keyword": "And "
 });
-formatter.match({});
+formatter.match({
+  "location": "com.team11.stepdefinitions.stateApiDefinations.In_States_user_deserialization_data_json_to_java_pojo()"
+});
 formatter.result({
-  "status": "undefined"
+  "status": "passed"
+});
+formatter.step({
+  "name": "In States user validates data.",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.team11.stepdefinitions.stateApiDefinations.In_States_user_validates_data()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
 });
 });
